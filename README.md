@@ -2,80 +2,112 @@
 
 An independent, educational UX redesign prototype inspired by Telegram, created as part of an industry-oriented UI/UX design project.
 
-The project focuses on identifying usability problems in an existing messaging experience and exploring how improved information architecture, navigation, and visual hierarchy can make common tasks easier to discover and use.
+The project focuses on identifying usability issues in an existing messaging experience and exploring how improved information architecture, navigation, visual hierarchy, and accessibility can create a clearer and more user-friendly experience.
+
+---
 
 ## 🎯 Project Objective
 
-The objective of this project is to redesign selected parts of a messaging application experience by focusing on:
+The objective of this project is to redesign selected parts of a messaging application experience by focusing on common usability problems and improving the way users discover and access important features.
 
-- Clearer separation between personal chats, groups, and channels
-- Better discoverability of downloaded files
-- Easier access to important account security information
-- Simpler navigation and information hierarchy
-- A cleaner and more user-friendly interface
+The redesign focuses on:
+
+- Clearer separation between chats, groups, and channels
+- Improved download discoverability
+- Easier access to account security information
+- Simplified navigation
+- Better information hierarchy
+- A cleaner and more intuitive interface
+
+---
 
 ## 🔍 Problems Identified
 
-During the evaluation of the existing experience, several usability concerns were identified.
-
 ### 1. Content Separation
 
-Personal conversations, groups, and channels can feel closely mixed together.
+Personal conversations, groups, and channels can feel closely connected within the overall messaging experience.
+
+This can make it harder for users to quickly locate the type of content they are looking for.
 
 ### 2. Download Discoverability
 
-Downloaded files are not immediately visible as a primary destination, making file discovery less straightforward.
+Downloaded files are not always immediately visible as a primary destination.
+
+Users may need to navigate through additional areas to locate downloaded content.
 
 ### 3. Security Visibility
 
-Important account activity, such as unfamiliar devices or login activity, can be difficult for users to notice quickly.
+Important account activity, including unfamiliar devices or login activity, may not be sufficiently prominent for users to identify potential security concerns quickly.
+
+---
 
 ## 💡 Proposed UX Improvements
 
-This prototype introduces a redesigned navigation structure with dedicated sections for:
+The redesign introduces a dedicated navigation structure containing:
 
-- 💬 Chats
-- 👥 Groups
-- 📢 Channels
-- ⬇️ Downloads
-- 🛡️ Security
+| Section | Purpose |
+|---|---|
+| 💬 Chats | Personal conversations |
+| 👥 Groups | Community and group conversations |
+| 📢 Channels | Broadcasts and followed content |
+| ⬇️ Downloads | Centralized downloaded files |
+| 🛡️ Security | Account and device security |
 
-The Downloads section provides:
+This structure aims to reduce navigation effort and improve feature discoverability.
 
-- Dedicated access from the main navigation
-- File search
+---
+
+## ⬇️ Downloads UX
+
+A dedicated Downloads section was introduced to make downloaded content easier to find.
+
+### Features
+
+- Dedicated Downloads navigation
+- Download search
 - File-type filtering
-- Storage usage information
-- Organized recent downloads
+- Storage usage indicator
+- Recent downloads
+- File categorization
+- Organized file information
 
-The Security Center provides:
+Users can quickly distinguish between:
 
-- Active device information
+- 📄 Documents
+- 🖼️ Images
+- 🎬 Videos
+
+The goal is to reduce the number of steps required to locate downloaded content.
+
+---
+
+## 🛡️ Security Center
+
+A Security Center concept was introduced to make important account activity easier to understand.
+
+### Features
+
+- Active device overview
 - Recent security activity
-- Unrecognized-device alerts
+- Unrecognized-device alert
+- Device location information
+- Login activity timeline
 - Account security actions
+- Two-step verification status
 
-## 🖥️ Current Prototype
+The design emphasizes important security events so users can identify unfamiliar activity more quickly.
 
-The current implementation is a front-end UX prototype built using:
+---
 
-- HTML5
-- CSS3
-- JavaScript
+## 🧭 Navigation Redesign
 
-It is designed to demonstrate the redesigned user experience rather than function as a complete messaging platform.
+The redesigned navigation provides direct access to important areas instead of relying on deeply nested navigation.
 
-## 📁 Project Structure
+### Primary Navigation
 
 ```text
-telegram-ux-redesign/
-│
-├── index.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── app.js
-│
-└── README.md
+💬 Chats
+👥 Groups
+📢 Channels
+⬇️ Downloads
+🛡️ Security
